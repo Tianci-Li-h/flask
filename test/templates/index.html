@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+</head>
+<body>
+    welcome to my page
+    <hr>
+    <ul>
+        <li><a href="/news">通过路由查看新闻</a></li>
+        <li><a href="{{url_for('newspage')}}">通过函数名查看新闻</a></li>
+        <li><a href="{{url_for('productpage',a=50)}}">通过函数名进入查看产品页</a></li>
+    </ul>
+    <p>采用render_template方法获取到的内容</p>
+    {{data}}  # 显示出传递过来的变量内容
+</body>
+</html>
